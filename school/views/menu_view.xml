@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <menuitem name="School"
+            id="school_menu_root"
+            sequence='1' />
+
+        <menuitem id="model_menu_root"
+            name="Model"
+            parent="school.school_menu_root"
+            action="school.schhol_model_menu_action"
+            sequence="1" />
+
+    </data>
+</odoo>
