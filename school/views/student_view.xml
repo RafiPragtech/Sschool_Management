@@ -47,7 +47,16 @@
                         </sheet>
                     </form>
                 </field>
-    
+            </record>
+
+            <record id="schhol_student_menu_search" model="ir.ui.view">
+                <field name="name">achool.student.menu.search</field>
+                <field name="model">school.student</field>
+                <field name="arch" type="xml">
+                    <search string="student">
+                        <field name="name"/>
+                    </search>
+                </field>
             </record>
     </data>
 </odoo>
