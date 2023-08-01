@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <!-- Action -->
+        <record id="school_invest_menu_action" model="ir.actions.act_window">
+            <field name="name">INVESTIGATION</field>
+            <field name="res_model">school.investigation</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Investigation
+                </p>
+            </field>
+        </record>
+
+        <!-- tree_view -->
+
+        <record id="school_invest_menu_tree" model="ir.ui.view">
+            <field name="name">investigation.tree</field>
+            <field name="model">school.investigation</field>
+            <field name="arch" type="xml">
+                <tree string="instigation">
+                    <field name="name" />
+                    <field name="age" />
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- list_view -->
+        <record id="school_invest_menu_form" model="ir.ui.view">
+            <field name="name">investigation.form</field>
+            <field name="model">school.investigation</field>
+            <field name="arch" type="xml">
+                <form string="investigation">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                                <field name="age" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

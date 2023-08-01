@@ -3,3 +3,5 @@ access_school_school,school.school,model_school_school,,1,1,1,1
 access_school_student,school.student,model_school_student,,1,1,1,1
 
 access_school_teacher,school.teacher,model_school_teacher,,1,1,1,1
+
+access_school_investigation,school.investigation,model_school_investigation,,1,1,1,1
