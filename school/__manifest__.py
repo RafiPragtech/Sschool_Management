@@ -29,6 +29,7 @@
         'views/templates.xml',
         'views/models_view.xml',
         'views/student_view.xml',
+        'views/teacher_view.xml',
         'views/menu_view.xml',
     ],
     # only loaded in demonstration mode

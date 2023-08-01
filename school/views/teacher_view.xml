@@ -1,25 +1,26 @@
 <odoo>
     <data>
             <!-- Action -->
-            <record id="school_student_menu_action" model="ir.actions.act_window">
-                <field name="name">Student</field>
-                <field name="res_model">school.student</field>
+            <record id="school_teacher_menu_action" model="ir.actions.act_window">
+                <field name="name">Teacher</field>
+                <field name="res_model">school.teacher</field>
                 <field name="view_mode">tree,form</field>
                 <field name="help" type="html">
                     <p class="o_view_nocontent_smiling_face">
-                        Student
+                        Teacher
                     </p>
                 </field>
             </record>
     
             <!-- tree_view -->
     
-            <record id="school_student_menu_tree" model="ir.ui.view">
-                <field name="name">student.tree</field>
-                <field name="model">school.student</field>
+            <record id="schhol_teacher_menu_tree" model="ir.ui.view">
+                <field name="name">teacher.tree</field>
+                <field name="model">school.teacher</field>
                 <field name="arch" type="xml">
-                    <tree string="student">
+                    <tree string="Teacher">
                         <field name="name" />
+                        <field name="subject" />
                         <field name="dob"/>
                         <field name="age" />
                         <field name="place"/>
@@ -29,19 +30,19 @@
             </record>
     
             <!-- list_view -->
-            <record id="school_student_menu_form" model="ir.ui.view">
-                <field name="name">student.form</field>
-                <field name="model">school.student</field>
+            <record id="school_teacher_menu_form" model="ir.ui.view">
+                <field name="name">teacher.form</field>
+                <field name="model">school.teacher</field>
                 <field name="arch" type="xml">
-                    <form string="Student">
+                    <form string="Teacher">
                         <sheet>
                             <group>
                                 <group>
                                     <field name="name" />
+                                    <field name="subject" />
                                     <field name="dob"/>
                                     <field name="age" />
                                     <field name="place"/>
-                                    
                                 </group>
                             </group>
                         </sheet>
@@ -49,14 +50,5 @@
                 </field>
             </record>
 
-            <record id="school_student_menu_search" model="ir.ui.view">
-                <field name="name">achool.student.menu.search</field>
-                <field name="model">school.student</field>
-                <field name="arch" type="xml">
-                    <search string="student">
-                        <field name="name"/>
-                    </search>
-                </field>
-            </record>
     </data>
 </odoo>
