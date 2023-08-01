@@ -1,54 +1,55 @@
 <odoo>
     <data>
-            <!-- Action -->
-            <record id="school_teacher_menu_action" model="ir.actions.act_window">
-                <field name="name">Teacher</field>
-                <field name="res_model">school.teacher</field>
-                <field name="view_mode">tree,form</field>
-                <field name="help" type="html">
-                    <p class="o_view_nocontent_smiling_face">
-                        Teacher
-                    </p>
-                </field>
-            </record>
-    
-            <!-- tree_view -->
-    
-            <record id="schhol_teacher_menu_tree" model="ir.ui.view">
-                <field name="name">teacher.tree</field>
-                <field name="model">school.teacher</field>
-                <field name="arch" type="xml">
-                    <tree string="Teacher">
-                        <field name="name" />
-                        <field name="subject" />
-                        <field name="dob"/>
-                        <field name="age" />
-                        <field name="place"/>
-                        
-                    </tree>
-                </field>
-            </record>
-    
-            <!-- list_view -->
-            <record id="school_teacher_menu_form" model="ir.ui.view">
-                <field name="name">teacher.form</field>
-                <field name="model">school.teacher</field>
-                <field name="arch" type="xml">
-                    <form string="Teacher">
-                        <sheet>
+
+        <record id="school_teacher_menu_action" model="ir.actions.act_window">
+            <field name="name">Teacher</field>
+            <field name="res_model">school.teacher</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Teacher
+                </p>
+            </field>
+        </record>
+
+        <!-- tree_view -->
+
+        <record id="school_teacher_menu_tree" model="ir.ui.view">
+            <field name="name">teacher.tree</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <tree string="teacher">
+                    <field name="name" />
+                    <field name="subject" />
+                    <field name="dob" />
+                    <field name="age" />
+                    <field name="place" />
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- list_view -->
+        <record id="school_taecher_menu_form" model="ir.ui.view">
+            <field name="name">student.form</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <form string="teacher">
+                    <sheet>
+                        <group>
                             <group>
-                                <group>
-                                    <field name="name" />
-                                    <field name="subject" />
-                                    <field name="dob"/>
-                                    <field name="age" />
-                                    <field name="place"/>
-                                </group>
+                                <field name="name" />
+                                <field name="subject" />
+                                <field name="dob" />
+                                <field name="age" />
+                                <field name="place" />
+
                             </group>
-                        </sheet>
-                    </form>
-                </field>
-            </record>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
     </data>
 </odoo>

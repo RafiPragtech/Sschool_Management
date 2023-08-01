@@ -46,7 +46,7 @@
                 </field>
             </record>
 
-            <record id="schhol_model_menu_search" model="ir.ui.view">
+            <record id="school_model_menu_search" model="ir.ui.view">
                 <field name="name">achool.model.menu.search</field>
                 <field name="model">school.student</field>
                 <field name="arch" type="xml">
