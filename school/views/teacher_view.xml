@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <!-- Action -->
+
         <record id="school_teacher_menu_action" model="ir.actions.act_window">
             <field name="name">Teacher</field>
             <field name="res_model">school.teacher</field>

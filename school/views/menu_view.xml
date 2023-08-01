@@ -16,7 +16,8 @@
             action="school.school_student_menu_action"
             sequence="1" />
 
-        <menuitem id="Teacher_menu_root"
+
+        <menuitem id="teacher_menu_root"
             name="Teacher"
             parent="school.school_menu_root"
             action="school.school_teacher_menu_action"
