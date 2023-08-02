@@ -51,5 +51,23 @@
             </field>
         </record>
 
+        <record id="school_teacher_menu_search" model="ir.ui.view">
+            <field name="name">school.teacher.menu.search</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <search string="teacher">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <record id="school_teacher_menu_search" model="ir.ui.view">
+            <field name="name">school.teacher.menu.search</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <search string="teacher">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
