@@ -57,6 +57,7 @@
             <field name="arch" type="xml">
                 <search string="teacher">
                     <field name="name"/>
+                    <field name="age"/>
                 </search>
             </field>
         </record>
